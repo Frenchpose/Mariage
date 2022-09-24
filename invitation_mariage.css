@@ -23,7 +23,7 @@ body {
 .bloc11 {
     display: flex;
     flex-direction: column;
-    animation-duration: 20s;
+    animation-duration: 80s;
     animation-name: mesImages;
     animation-iteration-count: infinite;
 }
