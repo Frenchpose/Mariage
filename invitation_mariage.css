@@ -1,0 +1,87 @@
+/* html, body {
+    height: 100%;
+} */
+
+/* body {
+    display: grid;
+    place-items: center;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bloc1 {
+    height: 560px;
+    overflow: hidden;
+}
+
+.bloc11 {
+    display: flex;
+    flex-direction: column;
+    animation-duration: 20s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mesImages {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-560px);
+    }
+
+    50% {
+        transform: translateY(-1120px);
+    }
+
+    75% {
+        transform: translateY(-1680px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+ @media (max-width:500px) {
+    /* #page0 {
+        height: 560px;
+        overflow: 560px;
+    } */
+    
+    #page5 {
+        height: 560px;
+        width: 350px;
+    }
+}
+
+@media (min-width:500px) and (max-width:800px) {
+    /* #page0 {
+        height: 560px;
+        overflow: 560px;
+    } */
+    
+    #page5 {
+        height: 560px;
+        width: 500px;
+    }
+}
+
+@media (min-width:800px) {
+    /* #page0 {
+        height: 560px;
+        overflow: 560px;
+    } */
+    
+    #page5 {
+        height: 560px;
+        width: 800;
+    }
+}
